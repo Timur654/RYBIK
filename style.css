@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+:root{
+    --bg-color:#080808;
+    --text-color:#ffffff;
+    --main-color:rgb(0, 0, 0);
+    --main-color:#f60b0b;
+}
+html{
+    font: size 60%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color)
+}
+.hearder{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 4rem 12% 4rem;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10xp);
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+    color: var(--main-color)
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: var(--text-color);
+}
+
+
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0.3 ease;
+    text-decoration: none;
+}
+
+.navbar a:hover , .navbar a.active{
+   color: var(--main-color);
+   border-bottom: 3px solid var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+display: none;
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.btn-group a:last-of-type(2){
+
+}
+
+.heading{
+    text-align: center;
+    font-size: 6rem;
+    margin: 5rem 0;
+}
+
+.games{
+    background: var(--bg-color);
+    color:rgb(0, 0, 0)
+}
+
+.games h2{
+    margin-bottom: 5rem;
+    color: var(--text-color)
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.game-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    height: 600px;
+    border-radius: 3rem;
+    border: 5x solid transparent;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    box-swadow: 0 0 10px var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color)
+}
+
+
+
+
+
+
+
+
+
